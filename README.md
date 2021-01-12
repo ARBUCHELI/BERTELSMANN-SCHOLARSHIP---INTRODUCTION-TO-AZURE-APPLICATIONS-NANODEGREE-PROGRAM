@@ -35,14 +35,19 @@ The cloud is a collection of servers on the internet that store and manage data,
 
 Some of the benefits of using cloud computing are:
 
-Cost
-Scale
-Reliability
-Security
+* Cost
+* Scale
+* Reliability
+* Security
+
 The three major types of cloud services are Public, Private, and Hybrid cloud. The major differences between these are in where they are deployed, and who manages them. Microsoft OneDrive, Microsoft Azure, and Microsoft Office365 are examples of public cloud options.
 
 Cloud Developers perform some of the following:
 
-Plan and design cloud based apps
-Monitor, maintain and support cloud applications
-Develop work flows and processes
+* Plan and design cloud based apps
+* Monitor, maintain and support cloud applications
+* Develop work flows and processes
+
+![image](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/2.jpg)
+
+![image](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/3.jpg)
