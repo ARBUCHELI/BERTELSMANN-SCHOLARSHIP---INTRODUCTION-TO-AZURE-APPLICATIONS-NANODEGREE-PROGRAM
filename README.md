@@ -22,3 +22,9 @@ This lesson will focus on the following topics under Microsoft Azure Cloud Devel
 * Comparing cloud service types (such as Infrastructure as a Service, Platform as a Service, and Software as a Service)
 * Tools and environment set up for the course
 * The final course project
+
+## Course Outline:
+
+The course is divided into 3 major sections - Azure Compute Services, Storage Options in Azure, and Security, Monitoring and Logging.
+
+![image](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/1.jpg)
