@@ -69,5 +69,9 @@ Some of the disadvantages of cloud computing are:
 * Sensitive, private and core data is physically located on someone else's server
 * Cloud services will be tailored and customized for your specific cloud instance, potentially making it hard to quickly change providers
 
+![image](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/4.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/5.jpg)
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
