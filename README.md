@@ -150,6 +150,8 @@ The Azure products this course will focus on are:
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/11.jpg)
 
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/12.jpg)
+
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
