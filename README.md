@@ -87,6 +87,35 @@ As a cloud developer, you will interact and engage with numerous stakeholders, e
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/7.jpg)
 
+## History of Cloud Development
+
+The roots of cloud computing go as far back as the 1960s.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/8.jpg)
+
+1969 - JCR Licklider aimed to create a system where information could be accessed anywhere in the world called the “Intergalactic Computer Network”.
+
+1980s - Supercomputing Centers start to form and Commercial Internet Service Providers start to emerge in the late 1980s.
+
+1990 - The internet becomes visible to all when Tim Berners-Lee invents the World Wide Web.
+
+1999 - Salesforce.com launches and becomes a pioneer in delivering enterprise applications over the internet, which is known as Software-as-a-Service(SaaS). This paves the way for other SaaS applications such as Microsoft 365 and Gmail.
+
+2002 - Amazon launches its Amazon Web Services (AWS) platform. AWS is formally launched as a business unit in 2006.
+
+2006 - Amazon launches its Elastic Compute Cloud (EC2), a commercial web service that allowed users to rent computers to run their applications. EC2 paved the way for application delivery over the internet, which allowed web-scaled businesses like Netflix and Spotify to exist.
+
+2007 - Dropbox introduces its file hosting service, and with that cloud storage becomes a commodity.
+
+2008 - Google launches its Google App Engine (GAE) Platform-as-a-Service (PaaS). This service allowed developers to host their web applications on Google’s managed data centers.
+
+2010 - Microsoft launches its cloud computing platform, Azure, after announcing it back in 2008. Azure now covers Software-as-a-Service(SaaS), Platform-as-a-Service(PaaS), and Infrastructure-as-a-Service(IaaS).
+
+2011 - IBM launches SmartCloud, a suite of enterprise-class cloud computing technologies for building private, public, and hybrid clouds.
+
+2013 - Google launches Google Compute Engine (GCE) as an addition to its Google Compute Platform. This is an Infrastructure-as-a-Service (IaaS) component of the platform that allows a user to spin up Virtual Machines (VMs) on demand.
+
+So what’s next? Cloud computing is on the rise in this day and age. As cloud computing continues to become more mainstream, more and more companies are looking to adopt it. Industries such as marketing, education, and healthcare are beginning to increase their use of cloud-based services and platforms.
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
