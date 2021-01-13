@@ -117,5 +117,35 @@ The roots of cloud computing go as far back as the 1960s.
 
 So what’s next? Cloud computing is on the rise in this day and age. As cloud computing continues to become more mainstream, more and more companies are looking to adopt it. Industries such as marketing, education, and healthcare are beginning to increase their use of cloud-based services and platforms.
 
+## Microsoft Azure
+
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/9.jpg)
+
+Azure is a public computing platform with tremendous value and benefits:
+
+* Scalability: can dynamically handle changes in volume, bandwidth, storage size
+* Availability: redundant on a global scale with 99.9%+ uptime (see SLA by service here)
+* Security: replicated data helps protect against natural disaster, while authentication strategies help secure access to the data
+* Standard delivery pipeline development services, such as:
+  * Source control
+  * Unit testing
+  * Integration testing
+  * Delivery
+* Live development tools
+
+Azure products span multiple categories, such as Compute, Analytics, Databases, A.I. and Machine Learning.
+
+The Azure products this course will focus on are:
+
+* App Services
+* Virtual Machines
+* Azure SQL Databases
+* Blob Storage
+* Azure Active Directory
+* Aspects of Azure Monitor, such as logs and alerts
+
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/10.jpg)
+
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
