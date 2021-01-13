@@ -52,5 +52,22 @@ Cloud Developers perform some of the following:
 
 ![image](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/3.jpg)
 
+## Why Cloud Development Is Important
+
+You've probably worked with various cloud services before, such as Microsoft OneDrive and Google Docs, and of course, you'll be working with Microsoft Azure in this course.
+
+Some of the advantages of cloud computing are:
+
+* Cost: The cloud provider handles all the upfront costs associated with buying hardware, along with on-going maintenance costs
+* Scale: Most are pay-as-you-go depending on demand (elasticity), and can be expanded as needed
+* Reliability: Management of backups, disaster recovery, etc. is made easier
+* Security: Policies and controls are already in place to protect your data
+
+Some of the disadvantages of cloud computing are:
+
+* It is internet-based, so it can be prone to outages and fluctuations in speed
+* Sensitive, private and core data is physically located on someone else's server
+* Cloud services will be tailored and customized for your specific cloud instance, potentially making it hard to quickly change providers
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
