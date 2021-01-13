@@ -51,3 +51,6 @@ Cloud Developers perform some of the following:
 ![image](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/2.jpg)
 
 ![image](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/3.jpg)
+
+
+# Adaptation as a repository: Andrés R. Bucheli.
