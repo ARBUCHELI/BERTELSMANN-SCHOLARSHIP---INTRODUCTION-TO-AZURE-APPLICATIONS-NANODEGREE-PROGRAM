@@ -73,5 +73,20 @@ Some of the disadvantages of cloud computing are:
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/5.jpg)
 
+## Business Stakeholders
+
+As a cloud developer, you will interact and engage with numerous stakeholders, each of whom has different priorities. Some of these are:
+
+* Your users
+* Company executives
+* I.T. Department
+* Cloud Service provider
+* Finance Department
+
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/6.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/7.jpg)
+
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
