@@ -152,6 +152,32 @@ The Azure products this course will focus on are:
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/12.jpg)
 
+## IaaS, PaaS, and SaaS
+
+In contrast to on-premises solutions, there are three types of services that Azure offers us:
+
+* Infrastructure as a Service (IaaS) - removes the expense of up-front costs of hardware, software and test environments
+* Platform as a Service (PaaS) - handles networking, provides middleware and development & database tools
+* Software as a Service (SaaS) - provides end-users access to online cloud solutions
+
+![](https://video.udacity-data.com/topher/2020/July/5f10a86a_azure-service-level-comparison/azure-service-level-comparison.png)
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/13.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
