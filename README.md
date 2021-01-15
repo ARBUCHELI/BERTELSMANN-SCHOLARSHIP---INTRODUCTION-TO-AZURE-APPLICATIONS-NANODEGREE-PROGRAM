@@ -163,6 +163,10 @@ In contrast to on-premises solutions, there are three types of services that Azu
 ![](https://video.udacity-data.com/topher/2020/July/5f10a86a_azure-service-level-comparison/azure-service-level-comparison.png)
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/13.jpg)
 
+## Tools & Environment
+
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/14.jpg)
+
 
 
 
