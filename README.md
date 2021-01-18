@@ -169,6 +169,21 @@ In contrast to on-premises solutions, there are three types of services that Azu
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/15.jpg)
 
+## Project: Deploy an Article CMS to Azure
+
+It is exciting to take a look at what we will be creating in our <strong>final course project</strong>. Similar to many such systems that exist in the real world, we will be designing, building, and deploying an Article Content Management System (CMS), which will include the ability to :
+
+* Login and authenticate
+* Read posts
+* Create and save a post
+* Edit and save an existing post
+
+The project looks straightforward from the user interface, but there is a lot going on under the hood of this Flask app. The Sign In page makes use of the Microsoft Authentication Library (MSAL) and Azure Active Directory to log in with a Microsoft account, while data related to article titles, authors and text bodies is stored in an Azure SQL Server. An Azure Storage Account with Blob Storage is used to store the images, and the web app itself can be deployed using either an Azure Virtual Machine or an Azure App Service. All of these resources are likely tied to a single resource group.
+
+All these terms may not make much sense to you yet, but by the end of the course, you'll know each resource involved quite well, and be able to deploy your own Article CMS with Azure!
+
+![](https://video.udacity-data.com/topher/2020/March/5e6f8ed6_article-cms/article-cms.png)
+
 
 
 
