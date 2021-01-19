@@ -195,7 +195,21 @@ What did we learn in this introductory lesson on Azure Cloud Development?
 * Tools and environment set up for the course
 * The final course project
 
+## Glosary
 
+* <strong>The Cloud</strong>	A collection of servers on the internet that store and manage data, run apps, and deliver content such as email or videos.
+* <strong>Cloud Computing</strong>	The delivery of software and storage over the Internet (i.e. the cloud).
+* <strong>Public Cloud</strong>	Cloud computing resources shared amongst multiple customers, with applications and data still separate.
+* <strong>Private Cloud</strong>	Cloud computing resources that are dedicated to only one entity. This is most similar to how on-premises resources operate, but with the resources still hosted off-site by a third party.
+* <strong>Hybrid Cloud</strong>	Utilizing a mix of public and private cloud resources.
+* <strong>Cloud Developer</strong>	Developers who build cloud applications or utilize other cloud resources in their applications. They are responsible for ensuring applications run efficiently in the cloud, requiring appropriate authentication to access, and identifying appropriate resources to use.
+* <strong>Microsoft Azure</strong>	A public computing platform provided by Microsoft, with many products spanning many categories, such as Compute, Analytics, Databases, A.I. and Machine Learning.
+* <strong>Azure Portal</strong>	The browser-based and GUI version of working with Azure resources.
+* <strong>Elasticity</strong>	The ability to scale up or down resources to match demand.
+* <strong>On-Premises</strong>	The non-cloud option where companies host all their necessary compute, storage and other resources on-site.
+* <strong>Infrastructure as a Service (Iaas)</strong>	Removes the expense of up-front costs of hardware, software and test environments, as the cloud provider is instead responsible for providing physical hardware.
+* <strong>Platform as a Service (Paas)</strong>	Handles networking, provides middleware and development & database tools, in addition to the physical hardware provided at the IaaS level.
+* Software as a Service (Saas)</strong>	Provides end-users access to online cloud solutions, without the need to build or support the underlying applications themselves.
 
 
 
