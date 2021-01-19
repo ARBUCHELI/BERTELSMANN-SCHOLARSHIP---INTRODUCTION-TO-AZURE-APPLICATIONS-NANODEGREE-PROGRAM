@@ -184,6 +184,19 @@ All these terms may not make much sense to you yet, but by the end of the course
 
 ![](https://video.udacity-data.com/topher/2020/March/5e6f8ed6_article-cms/article-cms.png)
 
+## Lesson Recap
+
+What did we learn in this introductory lesson on Azure Cloud Development?
+
+* Why cloud computing is important, when to use it, and who are the key stakeholders
+* History of the cloud
+* Microsoft Azure and Azure Portal
+* Comparing cloud service types - IaaS, PaaS and SaaS
+* Tools and environment set up for the course
+* The final course project
+
+
+
 
 
 
