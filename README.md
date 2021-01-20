@@ -2,7 +2,7 @@
 
 ## This repository contains exercises from Bertelsmann Scholarship. Introduction to Azure Applications Nanodegree Program.
 
-## LESSON 1 INTRODUCTION TO MICROSOFT AZURE DEVELOPMENT:
+# LESSON 1 INTRODUCTION TO MICROSOFT AZURE DEVELOPMENT:
 
 ## Prerequisites:
 
@@ -211,10 +211,62 @@ What did we learn in this introductory lesson on Azure Cloud Development?
 * <strong>Platform as a Service (Paas)</strong>	Handles networking, provides middleware and development & database tools, in addition to the physical hardware provided at the IaaS level.
 * Software as a Service (Saas)</strong>	Provides end-users access to online cloud solutions, without the need to build or support the underlying applications themselves.
 
+_________________________________________________________________________________________________________________________________________________________________________________
 
+# LESSON 2 AZURE COMPUTE DEVICES
 
+## Introduction
 
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/17.jpg)
 
+In this lesson, we'll focus on Azure Compute Services:
+
+* First, we'll take a look at some of the various compute options available
+* Then, we'll get you set up for success by discussing subscriptions and resource groups
+* From there, we'll take a deeper dive into two compute services in Azure: Virtual Machines and App Services
+* After comparing and contrasting these two, you'll create both resources and deploy an app to them
+
+![](https://video.udacity-data.com/topher/2020/July/5f10a6cb_course-outline-compute/course-outline-compute.png)
+
+## Big Picture: Compute Services
+
+There are a lot of compute services available through Azure, each with their own use cases. You can check out a good chart for deciding when to use each (which you'll see more of in later lessons and courses) in the Microsoft documentation. Some of the available options are:
+
+* Virtual Machines
+* App Services
+* Azure Batch
+* Azure Functions
+* Container Instances
+* Service Fabric
+* Azure Kubernetes Service (AKS)
+
+We'll focus on Virtual Machines and App Services in this lesson, although you'll see some of the others in a later course.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/18.jpg)
+
+## Subscriptions and Resource Groups
+
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/19.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/20.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/21.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/22.jpg)
+
+This starts at the top with your <strong>Azure Account</strong>. The next level down is the <strong>Subscription</strong> level; in this course you will likely only work with one subscription, but it's likely in your day-to-day Azure work that you may be working with more than one. For instance, there may be one subscription for development and testing, and another for production systems.
+
+Below the subscription level is where you'll find <strong>Resource Groups</strong>. These help to organize resources you use, such as Virtual Machines and App Services (as well as storage options and other resources we'll discuss in later lessons), in order to make resource management easier. You may have a resource group for a specific project, or because resource groups are tied to a <strong>Region</strong>, you may have resource groups containing similar resources in multiple locations across the world. A region contains at least one data center, but could have multiple data centers that are close by and networked together through a low-latency network. There are over 60 regions available worldwide and available in 140 countries, such as East US and Japan West.
+
+![](https://video.udacity-data.com/topher/2020/July/5f108911_subscription-resource-group-hierarchy/subscription-resource-group-hierarchy.png)
+
+When choosing a region, it's important to consider what you are trying to achieve. For development and testing purposes, you likely want a region close to yourself; for production purposes, you often want resources to be close to your user. Keep the following in mind:
+
+* Service availability - Some services may not be available in a particular region.
+* Performance - Latency determines network service performance; are you creating resources for yourself or your end user?
+* Cost - Costs of services vary by region. If latency isn’t an issue, you might want to deploy your services in the cheapest region.
+
+### Creating a Resource Group in the Azure Portal
 
 
 
