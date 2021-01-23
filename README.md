@@ -288,8 +288,32 @@ You'll practice this yourself in the upcoming exercise.
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/28.jpg
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/29.jpg)
 
+## Exercise: Create A Resource Group
 
+In this exercise, you'll create a resource group in Azure. This is a quick exercise, but will set you up for success through the rest of the course!
 
+* Create a Resource Group named <strong>resource-group-west</strong> in Azure in the <strong>West US</strong> region.
+
+<strong>Note:</strong> We will use this resource group throughout the course, so do not delete it after creation. Resource Groups are fully covered in the Azure free account.
+
+## Solution (Alternative Solution using the CLI)
+
+### Steps to Create a Resource Group using the Azure CLI:
+
+* 1. Log in using az login.
+* 2. We'll use the Azure CLI command az group create and pass in two flags:
+   * resource group --name
+   * --location which is the same as the "region" field on the Azure portal.
+* 3. If you want to see a list of all locations, you can run az account list-locations -o table to output the list in table format.
+* 4. I want to create my resource group in the West US 2 region:
+
+az group create --name resource-group-west --location westus2
+
+The resource group will be created and a JSON response will be returned with the status.
+
+Alternatively, you can check out the screenshot below for how you might do the same from the Portal (note that the below uses the West US region and not West US 2).
+
+![](https://video.udacity-data.com/topher/2020/July/5f075271_resource-group-solution/resource-group-solution.png)
 
 
 
