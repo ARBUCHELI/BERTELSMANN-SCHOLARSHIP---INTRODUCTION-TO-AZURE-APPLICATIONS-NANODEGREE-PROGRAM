@@ -268,6 +268,9 @@ When choosing a region, it's important to consider what you are trying to achiev
 
 ### Creating a Resource Group in the Azure Portal
 
+Create a Resource Group named <strong>resource-group-west</strong> in Azure in the <strong>West US</strong> region.
+
+<strong>Note:</strong> We will use this resource group throughout the course, so do not delete it after creation. Resource Groups are fully covered in the Azure free account.
 
 
 
