@@ -268,9 +268,24 @@ When choosing a region, it's important to consider what you are trying to achiev
 
 ### Creating a Resource Group in the Azure Portal
 
-Create a Resource Group named <strong>resource-group-west</strong> in Azure in the <strong>West US</strong> region.
+To set up a resource group in the Azure Portal:
 
-<strong>Note:</strong> We will use this resource group throughout the course, so do not delete it after creation. Resource Groups are fully covered in the Azure free account.
+* Go to the [Azure Portal homepage](http://portal.azure.com/)
+* Click "Create a Resource Group"
+* Search for "Resource group" and click "Create"
+* You'll need to select the subscription for the resource group, name it, and select a region
+* Make sure once you select "Review and create" to actually review the information! While it doesn't take too much time to go back and create a new resource group, you'll want to check for any typos in the name or if the wrong region was selected. When we work out of Azure CLI later, this becomes even more important, as you could cause other scripts to fail if things are named incorrectly or are in an inappropriate region.
+* Click "Create" once you are done reviewing.
+
+You'll practice this yourself in the upcoming exercise.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/23.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/24.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/25.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/26.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/27.jpg)
+
+
 
 
 
