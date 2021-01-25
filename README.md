@@ -362,4 +362,6 @@ Some of the limitations of an App Service are:
 ### Use Cases
 Each of these has their own use cases, although sometimes there is still some ambiguity on when to use each. Virtual Machines are usually better when you need control of the underlying operating system or are using custom software to support your needs; an app service is typically better for lightweight applications and services, especially when you don't have the need for high performance compute services. Additionally, you'll need to take into consideration the hardware limitations of App Services, as noted above.
 
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/37.jpg)
+
 # Adaptation as a repository: Andrés R. Bucheli.
