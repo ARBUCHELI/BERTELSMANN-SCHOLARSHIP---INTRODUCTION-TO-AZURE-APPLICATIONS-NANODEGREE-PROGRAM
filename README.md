@@ -364,6 +364,36 @@ Each of these has their own use cases, although sometimes there is still some am
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/37.jpg)
 
+## Exercise: Virtual Machines vs. App Services
 
+### Virtual Machines vs. App Services
+For each of the three scenarios below, analyze and determine whether a virtual machine or an app service would be best served for the situation. It's important to note that this involves some level of ambiguity - you should feel free to expand beyond the given scenario and consider any other areas that might be important in making your decision.
+
+### Scenario 1
+Your company wants to deploy a series of lightweight APIs as part of their plan to shift to using microservices in the future. The company is very cost-conscious due to the current economic environment, and wants to focus on using the correct services right now, and is less concerned about scaling concerns due to stagnant growth.
+
+### Scenario 1 Scratchpad
+You can use this space as a scratchpad of your thoughts on Scenario 1. Note that this will lock after you submit it.
+
+Your reflection
+* App Services
+
+### Scenario 2
+Your company has recently signed a sizable government contract in which you will deploy various apps for the related government departments to use. The contract was a big win for the company, as it vastly increases the number of users of your apps. Additionally, the contract does contain provisions that require dedicated servers for security reasons to host any of the government department's services and information. Relatedly, some of the different departments' applications are required to be maintained on different servers.
+
+### Scenario 2 Scratchpad
+You can use this space as a scratchpad of your thoughts on Scenario 2. Note that this will lock after you submit it.
+
+Your reflection
+* Virtual Machines
+
+### Scenario 3
+You have been assigned to determine the cloud needs for a new product your company will soon be launching. In the past couple of years, your company has been on a roller coaster ride - some product launches meet massive success, while others flounder pretty quickly out of the gates. As such, the product manager is a bit wary of immediately creating a bunch of resources without knowing for sure what the real demand for this new product will be. The application currently utilizes ~5 GB on 2 CPUs during your stress testing, but is definitely a minimum viable product, and could grow vastly in size and compute resources if successful.
+
+### Scenario 3 Scratchpad
+You can use this space as a scratchpad of your thoughts on Scenario 3. Note that this will lock after you submit it.
+
+### Your reflection
+* App Services
 
 # Adaptation as a repository: Andrés R. Bucheli.
