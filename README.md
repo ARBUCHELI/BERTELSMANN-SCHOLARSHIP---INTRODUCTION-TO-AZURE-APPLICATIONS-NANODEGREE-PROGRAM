@@ -434,4 +434,55 @@ Some key points that stood out to me were:
 
 The answer here depends greatly on which of the above points you highlight. In the current situation, an App Service likely works fine - it can scale vertically to meet different demand levels, and the compute resources needed are well within App Service limits. However, there's some consideration that Virtual Machines may be necessary in the near future if many more features are added, or demand changes in a way that requires vertical scaling. In fact, I'd argue that the problem so far is a bit ill-defined - I'd want to know what level of control we need over the underlying OS, security requirements we have, etc.
 
+## Creating a Virtual Machine
+
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/39.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/40.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/41.jpg(
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/42.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/43.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/44.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/45.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/46.jpg)
+
+The steps I took to create a Linux Virtual Machine on Azure were:
+
+* 1. On the homepage, click "Create a resource"
+* 2. Click on "Compute" in the left menu
+* 3. Click on "Virtual Machine"
+* 4. Create a Linux VM with the following details:
+
+* Subscription: This will vary for you. Should default to your subscription.
+* Resource Group: "hello-world-rg"
+* VM Name: "linux-vm-west"
+* Region: West US 2 or a region closest to you that's available
+* Availability Options: Default option of "No infrastructure redundancy required" is fine here.
+* Image: Ubuntu Server (any version) but I'm going to use the latest version 18.04 LTS
+* Azure Spot instance: No
+* Size: Click on "Select Size" and select "Standard B1ls"
+* Authentication type: Password
+* Username: (any username you choose) something other than the default "AzureUser" I used "udacityadmin"
+* Password: (any password you choose) "Udacityadmin@123"
+* Inbound Port Rules: "Allow Select Ports" and make sure from the drop-down menu, 22 and 80 are selected.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Adaptation as a repository: Andrés R. Bucheli.
