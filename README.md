@@ -396,4 +396,42 @@ You can use this space as a scratchpad of your thoughts on Scenario 3. Note that
 ### Your reflection
 * App Services
 
+## Solution: Virtual Machines vs. App Services
+
+### Scenario 1
+>>Your company wants to deploy a series of lightweight APIs as part of their plan to shift to using microservices in the future. The company is very cost-conscious due to the >>current economic environment, and wants to focus on using the correct services right now, and is less concerned about scaling concerns due to stagnant growth.
+
+Some key points that stood out to me were:
+
+* Deploying a series of lightweight APIs
+* Less concern about scaling up processing power
+* Cost-consciousness
+
+I would choose an <strong>App Service</strong> in this situation. Lightweight APIs tend to be well-suited to App Services over VMs, and won't approach the size limit for App Services very easily. Additionally, App Services cost less than VMs do. Lastly, since the ability to scale quickly is less of a concern, we don't need to factor that into the analysis.
+
+As the company shifts into microservices, Azure Functions would also be a good compute option for them to consider, but that won’t be covered until a later course.
+
+### Scenario 2
+>>Your company has recently signed a sizeable government contract in which you will deploy various apps for the related government departments to use. The contract was a big win >>for the company, as it vastly increases the number of users of your apps. Additionally, the contract does contain provisions that require dedicated servers for security >>reasons to host any of the government department's services and information. Relatedly, some of the different departments' applications are required to be maintained on >>different servers.
+
+A couple of key points that stood out to me were:
+
+* A vast increase in the number of users
+* The need for dedicated servers for security reasons
+
+This situation is likely best for <strong>Virtual Machines</strong>. Handling the vast increase in the number of users, with separate, dedicated servers, is going to be better achieved this way.
+
+### Scenario 3
+>>You have been assigned to determine the cloud needs for a new product your company will soon be launching. In the past couple of years, your company has been on a roller >>coaster ride - some product launches meet massive success, while others flounder pretty quickly out of the gates. As such, the product manager is a bit wary of immediately >>creating a bunch of resources without knowing for sure what the real demand for this new product will be. The application currently utilizes ~5 GB on 2 CPUs during your stress >>testing, but is definitely a minimum viable product, and could grow vastly in size and compute resources if successful.
+
+This is a bit of a tough one - it's important to remember that in real-life situations, there may not always be a clear dividing line on exactly which service is best.
+
+Some key points that stood out to me were:
+
+* The confidence level of this application being a massive success seems low (do we want to assume we'll need a lot of scaling?)
+* The application currently utilizes ~5 GB on 2 CPUs during stress testing
+* The potential the app will grow in resource needs
+
+The answer here depends greatly on which of the above points you highlight. In the current situation, an App Service likely works fine - it can scale vertically to meet different demand levels, and the compute resources needed are well within App Service limits. However, there's some consideration that Virtual Machines may be necessary in the near future if many more features are added, or demand changes in a way that requires vertical scaling. In fact, I'd argue that the problem so far is a bit ill-defined - I'd want to know what level of control we need over the underlying OS, security requirements we have, etc.
+
 # Adaptation as a repository: Andrés R. Bucheli.
