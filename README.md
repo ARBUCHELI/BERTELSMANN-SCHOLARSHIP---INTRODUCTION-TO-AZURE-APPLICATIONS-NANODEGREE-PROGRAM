@@ -364,4 +364,6 @@ Each of these has their own use cases, although sometimes there is still some am
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/37.jpg)
 
+
+
 # Adaptation as a repository: Andrés R. Bucheli.
