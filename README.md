@@ -439,7 +439,7 @@ The answer here depends greatly on which of the above points you highlight. In t
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/39.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/40.jpg)
-![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/41.jpg(
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/41.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/42.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/43.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/44.jpg)
@@ -466,9 +466,73 @@ The steps I took to create a Linux Virtual Machine on Azure were:
 * Password: (any password you choose) "Udacityadmin@123"
 * Inbound Port Rules: "Allow Select Ports" and make sure from the drop-down menu, 22 and 80 are selected.
 
+### Connect and deploy an App using the command line:
 
+To connect to the created VM, I did the following (note that Windows users should use PowerShell or Bash):
 
+* 1. We'll need our admin username we set when creating the VM - "udacityadmin"
+* 2. We'll need the public IP address of our VM. You can use the following command to grab the IPs addresses for a particular VM from the CLI—
+```
+az vm list-ip-addresses -g <RESOURCE-GROUP> -n <VIRTUAL-MACHINE-NAME>
+```
+or use Azure portal.
+* 3. Next, we're going to copy a basic Flask app from my local machine to the VM. We'll be using the secure copy utility—
+```
+scp -r <SOURCE-DIR> [ADMIN-NAME]@[PUBLIC-IP]:<TARGET-DIR>
+```
+In this example, I used—
+```
+scp -r ./web udacityadmin@IPADDRESS:/home/udacityadmin
+```
+### NOTE: 
+The first time you try connecting to the VM, you'll see a similar message to the one below and should answer 'yes' to permanently add the IP address to the list of known hosts.
 
+>>The authenticity of host '52.191.135.139 (52.191.135.139)' can't be established.
+>>ECDSA key fingerprint is SHA256:7bBVTsYNImhXxAn+xscCHm/OkcodHZS615VSKO3GP8c.
+>>Are you sure you want to continue connecting (yes/no)?
+
+* 4. Once the files have been copied to the VM, we can connect to the VM using—
+```
+ssh [ADMIN-NAME]@[PUBLIC-IP]
+```
+
+* 5. We can use "ls" to see the web directory we just uploaded
+
+* 6. Python 3 is already installed on the VM. We'll install Python Virtual Environment and NGNIX to use as a reverse proxy
+```
+sudo apt-get -y update && sudo apt-get -y install nginx python3-venv
+```
+### Reverse Proxy
+
+In computer networks such as the internet, a reverse proxy is a common type of proxy server that is accessible from the public network. Large websites and content delivery networks use reverse proxies –together with other techniques– to balance the load between internal servers. Reverse proxies can keep a cache of static content, which further reduces the load on these internal servers and the internal network. It is also common for reverse proxies to add features such as compression or TLS encryption to the communication channel between the client and the reverse proxy.
+
+* 7. Before we run the app, we have to configure Nginx to redirect all incoming connections on port 80 to our app that is running on localhost port 3000
+
+* By default, Nginx has a default page that is displayed. If you visit the public IP address in your browser, you should see this page rendered.
+* We'll navigate to the <strong>/etc/nginx/sites-available</strong> directory—
+```cd /etc/nginx/sites-available
+```
+* We’ll first unlink the default site using 
+```sudo unlink /etc/nginx/sites-enabled/default
+```
+* Then we’ll create a new file <strong>reverse-proxy.conf</strong> in the <strong>/etc/nginx/sites-available</strong>—
+<strong>sudo vim reverse-proxy.conf</strong>
+* We're going to add the following code to this file:
+
+```
+server {
+    listen 80;
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection keep-alive;
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+ }
+ 
+ ```
 
 
 
