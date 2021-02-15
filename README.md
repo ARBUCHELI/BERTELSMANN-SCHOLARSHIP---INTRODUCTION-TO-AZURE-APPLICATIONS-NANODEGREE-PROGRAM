@@ -1,6 +1,6 @@
 # BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM
 
-## This repository contains exercises from Bertelsmann Scholarship. Introduction to Azure Applications Nanodegree Program.
+## This repository contains the lessons from Bertelsmann Scholarship. Introduction to Azure Applications Nanodegree Program.
 
 # LESSON 1 INTRODUCTION TO MICROSOFT AZURE DEVELOPMENT:
 
