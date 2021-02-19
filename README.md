@@ -287,6 +287,10 @@ You'll practice this yourself in the upcoming exercise.
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/28.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/29.jpg)
 
+Please watch the video to follow the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/23.jpg)](https://www.youtube.com/watch?v=_9nHPP0gixc&feature=emb_logo)
+
 ## Exercise: Create A Resource Group
 
 In this exercise, you'll create a resource group in Azure. This is a quick exercise, but will set you up for success through the rest of the course!
