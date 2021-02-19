@@ -318,6 +318,10 @@ Alternatively, you can check out the screenshot below for how you might do the s
 
 ![](https://video.udacity-data.com/topher/2020/July/5f075271_resource-group-solution/resource-group-solution.png)
 
+Please watch the video to follow the tutorial:
+
+[![IMAGE ALT TEXT](https://video.udacity-data.com/topher/2020/July/5f075271_resource-group-solution/resource-group-solution.png)](https://www.youtube.com/watch?v=rmWRvxY0Hh8&feature=emb_logo)
+
 ## Virtual Machines vs. App Services
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/30.jpg)
