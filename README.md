@@ -480,6 +480,8 @@ The steps I took to create a Linux Virtual Machine on Azure were:
 
 ### Connect and deploy an App using the command line:
 
+Please watch the video to follow the tutorial:
+
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/47.jpg)](https://www.youtube.com/watch?time_continue=20&v=Ty_ZR_E6Ukg&feature=emb_logo)
 
 To connect to the created VM, I did the following (note that Windows users should use PowerShell or Bash):
