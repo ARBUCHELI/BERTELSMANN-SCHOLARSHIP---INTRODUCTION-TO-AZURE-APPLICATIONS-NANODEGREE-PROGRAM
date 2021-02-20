@@ -628,7 +628,95 @@ Once you're done with the exercise, be sure to delete the VM and it's resources 
 
 <strong>Note:</strong> Azure free accounts only allow 750 hours of free hosting. Make sure to delete this VM after completing the exercise to avoid charges.
 
+## Solution: Creating a Virtual Machine
 
+Please watch the video to follow the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/47.jpg)](https://www.youtube.com/watch?v=a5gKkVARnXU&feature=emb_logo)
+
+In this solution video, I showed you an alternative way to create a Linux VM using Azure CLI. Use whichever method you feel more comfortable with moving forward. Connecting to the VM is done the same way in both instances.
+
+* 1. First, we'll login using ```az login```
+* 2. Next, we'll create our VM using ```az vm create```. If we don't pass a location, it defaults to the location of the resource group. This would be fine in most cases, but it's worth noting that sometimes a VM size might not be available in the same region as your resource group, so you'd have to pass in a location for a different region.
+
+az vm create \
+   --resource-group "resource-group-west" \
+   --name "linux-vm-west" \
+   --location "westus2" \
+   --image "UbuntuLTS" \
+   --size "Standard_B1ls" \
+   --admin-username "udacityadmin" \
+   --generate-ssh-keys \
+   --verbose
+   
+* 3. Upon success, you will have a JSON response.
+* 4. Next we will open port 80 to allow outside traffic to our VM
+
+az vm open-port \
+    --port "80" \
+    --resource-group "resource-group-west" \
+    --name "linux-vm-west"
+    
+* 5. Upon success, you will receive a JSON response.
+Alternatively, you can check the screenshot below for the same approach through the portal.
+
+![](https://video.udacity-data.com/topher/2020/July/5f075463_linux-vm-solution/linux-vm-solution.png)
+
+### Connecting to the VM
+* 1. We'll need the admin username we set when creating the VM
+* 2. We'll need the public IP address of our VM. You can use the following command to grab the IP address for a particular VM from the CLI.
+```az vm list-ip-addresses -g resource-group-west -n linux-vm-west```
+* 3. Next we're going to copy a basic Flask app from my local machine to the VM. We'll be using the secure copy utility. ```scp -r ./web udacityadmin@IPADDRESS:/home/udacityadmin```
+* 4. Now we can connect to the VM with “ssh [username]@[IP Address]” Note: Since we generated SSH keys, you won't be prompted for a password.
+* 5. Run ls to see the web directory we just uploaded
+* 6. Python 3 is already installed on the VM. We'll install Python Virtual Environment and NGNIX to use as a reverse proxy
+```sudo apt-get -y update && sudo apt-get -y install nginx python3-venv```
+* 7. Before we run the app, we have to configure Nginx to redirect all incoming connections on port 80 to our app that is running on localhost port 3000
+
+>> * By default, Nginx has a default page that is displayed. If you visit the public IP address in your browser, you should see this page rendered.
+>> * We'll navigate to the /etc/nginx/sites-available directory—
+```cd /etc/nginx/sites-available```
+>> * We’ll first unlink the default site using ```sudo unlink /etc/nginx/sites-enabled/default```
+>> * Then we’ll create a new file reverse-proxy.conf in /etc/nginx/sites-available—
+```sudo vim reverse-proxy.conf```
+>> * We're going to add the following code to this file:
+
+server {
+    listen 80;
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection keep-alive;
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+ }
+ 
+* 8. Now we’ll activate the directories by creating a sym link to the /sites-enabled directory 
+```sudo ln -s /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enabled/reverse-proxy.conf```
+>> * We have to restart nginx so the changes take effect. ```sudo service nginx restart```
+
+### Deploying the App to the VM
+This section is the same as the earlier walkthrough, so we'll skip a solution video for it.
+
+To deploy the app on the virtual machine, I did the following:
+
+* 1. CD to ```web```
+* 2. Create venv ```python3 -m venv venv```
+* 3. Activate the env ```source venv/bin/activate```
+* 4. Upgrade pip in our virtual environment and then Install dependencies—
+```pip install --upgrade pip pip install -r requirements.txt```
+* 5. We'll run our app ```python application.py```
+* 6. In a web browser, we can visit the publicIpaddress
+* 7. Type "exit" to disconnect from the VM
+
+### Cleanup
+If we no longer need a resource, we can delete them through the portal. The quickest way to do this from the CLI is to delete the resource group. This will delete all resources in that group
+
+```az group delete -n resource-group-west```
+
+_________________________________________________________________________________________________________________________________________________________________________________
 # GLOSSARY 
 
 ### Reverse Proxy:
