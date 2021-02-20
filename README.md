@@ -444,6 +444,10 @@ The answer here depends greatly on which of the above points you highlight. In t
 
 ## Creating a Virtual Machine
 
+Please watch the video to follow the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=ngD-D9XBPw4&feature=emb_logo)
+
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/39.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/40.jpg)
@@ -475,6 +479,8 @@ The steps I took to create a Linux Virtual Machine on Azure were:
 * Inbound Port Rules: "Allow Select Ports" and make sure from the drop-down menu, 22 and 80 are selected.
 
 ### Connect and deploy an App using the command line:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/47.jpg)](https://www.youtube.com/watch?time_continue=20&v=Ty_ZR_E6Ukg&feature=emb_logo)
 
 To connect to the created VM, I did the following (note that Windows users should use PowerShell or Bash):
 
@@ -510,9 +516,6 @@ ssh [ADMIN-NAME]@[PUBLIC-IP]
 ```
 sudo apt-get -y update && sudo apt-get -y install nginx python3-venv
 ```
-### Reverse Proxy
-
-In computer networks such as the internet, a reverse proxy is a common type of proxy server that is accessible from the public network. Large websites and content delivery networks use reverse proxies –together with other techniques– to balance the load between internal servers. Reverse proxies can keep a cache of static content, which further reduces the load on these internal servers and the internal network. It is also common for reverse proxies to add features such as compression or TLS encryption to the communication channel between the client and the reverse proxy.
 
 * 7. Before we run the app, we have to configure Nginx to redirect all incoming connections on port 80 to our app that is running on localhost port 3000
 
@@ -541,6 +544,41 @@ server {
  }
  
  ```
+ 
+Now we’ll activate the directories by creating a sym link to the /sites-enabled directory 
+
+```sudo ln -s /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enabled/reverse-proxy.conf```
+
+* We have to restart nginx so the changes take effect. ```sudo service nginx restart```
+
+* 8. cd to web
+
+* 9. Create venv ```python3 -m venv venv```
+* 10. Activate the env ```source venv/bin/activate```
+* 11. Upgrade pip in our virtual environment and then Install dependencies ```pip install --upgrade pip pip install -r requirements.txt```
+* 12. We'll run our app ```python application.py```
+* 13. In a web browser, we can visit the public IP address of the VM and you should see the application
+* 14. Type "exit" to disconnect from the VM
+
+<strong>Note:</strong> Azure free account only allows 750 hours of free hosting. Make sure to delete this VM after creation for any exercises to avoid charges.
+
+<strong>Cleanup</strong>
+If we no longer need a resource, we can delete them through the portal.
+
+* 1. From the homepage, click on "Resource Group"
+* 2. Click on the resource group you want to manage
+* 3. You have two options—"Delete resource group" or if you want to keep the resource group, you can click on the individual or collection of resources you want to delete and click on "Delete"
+
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/48.jpg)
+
+## QUESTION 2 OF 2
+You've gone through all the steps for creating a Virtual Machine and deploying an app to it, and everything appears to be working from within the VM itself. However, when you navigate to the public IP address, it gives a connection error. Which of the following is a likely cause of the issue?
+
+* You need to make sure the VM is listening on port 80
+
+
+
+
 
 # GLOSSARY 
 
